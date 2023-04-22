@@ -1,0 +1,157 @@
+.header {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.header__pages {
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: 93px;
+    text-align: center;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+
+}
+
+.header__icon {
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+.header__page:not(:first-child) {
+    margin-left: 55px;
+}
+
+.header__contacts {
+    margin-top: 32px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+}
+
+// .header__contact {
+//     margin-right: 50px;
+// }
+
+@media screen and (max-width: 980px) {
+    .header__web {
+        width: 134px;
+        height: 28px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        color: #2196f3;
+    }
+}
+
+.header__web {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    color: #2196f3;
+}
+
+
+@media screen and (max-width: 980px) {
+    .header__logo {
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        color: black;
+    }
+}
+
+.header__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    color: black;
+}
+
+.header__link {
+    font-weight: 500;
+    font-size: 14px;
+    color: #212121;
+}
+
+.header__link:hover {
+    color: #2196f3;
+}
+
+.contact__link:hover {
+    color: #2196f3;
+}
+
+.contact__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #212121;
+}
+
+.header .containar {
+    display: flex;
+}
+
+.header__icon {
+    width: 40px;
+    height: 40px;
+    fill: black;
+    background-color: #2196f3;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+
+    background-color: white;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.menu__icon {
+    position: relative;
+}
